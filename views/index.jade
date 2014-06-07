@@ -1,0 +1,30 @@
+extends layout
+extends layout
+
+block content
+  a(href="/") 
+    h1= title
+  div(class="row")
+    div(class="col-md-5")
+      h2 Last Fake Generators
+    div(class="col-md-5")
+      form(class="form", action="/",method="get", role="form", style="float:right")
+        div(class="form-group")
+          input(name="q",id="title", placeholder="Search",class="form-control" )
+
+  div(class="row")
+    div(class="col-md-10")
+      a(href="/submit", style="float:right", class="btn btn-primary btn-sm") Submit
+      table(class="table table-striped table-bordered table-condensed")
+        tr
+            th Title
+            th URL
+            th Date
+        each item in data
+            tr
+                td= item.title
+                td
+                  a(href="http://" + item.url) #{item.url}
+                td= item.date
+
+  

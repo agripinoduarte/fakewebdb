@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  a(href="/")
+    h1= title
+  div(class="row")
+    div(class="col-md-4")
+      h3 Submit Your Fake Source
+      form(class="form", action="/submit",method="post", role="form")
+        div(class="form-group")
+          label(for="title") Title
+          input(name="title",id="title", label="Title",class="form-control" )
+        div(class="form-group")
+          label(for="url") URL
+          input(name="url",class="form-control",id="url", label="url")
+        button(type="submit", class="btn btn-default") Submit
