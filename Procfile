@@ -1,1 +1,1 @@
-web: npm start fakewebdb
+web: npm start
