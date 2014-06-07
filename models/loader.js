@@ -1,6 +1,6 @@
 ///// Model Loader
 // Loads Mongoose (MongoDB Mapper) and app models 
-mongodb_uri = "mongodb://trIMZYtzoXqd:tRCjpCHrQbge@dbs004.mongosoup.de/cc_trIMZYtzoXqd"
+mongodb_uri = process.env.MONGOSOUP_URL
 
 global.mongoose = require('mongoose');
 global.Schema = require('mongoose/lib').Schema;
