@@ -4,7 +4,7 @@
   "private": false,
   "description": "The Fake Web Database API",
   "scripts": {
-    "start": "node app.js"
+    "start": "node bin/www"
   },
   "dependencies": {
     "express": "~4.2.0",
