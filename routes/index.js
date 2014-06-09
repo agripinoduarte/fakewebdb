@@ -46,6 +46,7 @@ router.post('/submit', function(req, res) {
 });
 
 router.get('/api/getSources',  function(req, res) {
+    limit = null;
     if (req.param('limit') == undefined) {
         limit = 40;
     }
